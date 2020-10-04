@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pelangi"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="150dp"
+            android:text="@string/task_sensor"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnAcce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_merah"
+            android:onClick="Accelerometer"
+            android:text="@string/type_accelerometer"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnAtemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_orange"
+            android:onClick="Atemperature"
+            android:text="@string/type_ambient_temperature"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAcce" />
+
+        <Button
+            android:id="@+id/btnGrav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_kuning"
+            android:onClick="Gravity"
+            android:text="@string/type_gravity"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnAtemp" />
+
+        <Button
+            android:id="@+id/btnGyro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_hijau"
+            android:onClick="Gyroscope"
+            android:text="@string/type_gyroscope"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnGrav" />
+
+        <Button
+            android:id="@+id/btnLigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_biru"
+            android:onClick="Light"
+            android:text="@string/type_light"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnGyro" />
+
+        <Button
+            android:id="@+id/btnLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_nila"
+            android:onClick="Linear"
+            android:text="@string/type_linear_acceleration"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLigh" />
+
+        <Button
+            android:id="@+id/btnMagn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_ungu"
+            android:onClick="Magnetic"
+            android:text="@string/type_magnetic_field"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLine" />
+
+        <Button
+            android:id="@+id/btnOrie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_merah"
+            android:onClick="Orientation"
+            android:text="@string/type_orientation"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnMagn" />
+
+        <Button
+            android:id="@+id/btnPres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_orange"
+            android:onClick="Pressure"
+            android:text="@string/type_pressure"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnOrie" />
+
+        <Button
+            android:id="@+id/btnProx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_kuning"
+            android:onClick="Proximity"
+            android:text="@string/type_proximity"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnPres" />
+
+        <Button
+            android:id="@+id/btnRela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_hijau"
+            android:onClick="Relative"
+            android:text="@string/type_relative_humidity"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnProx" />
+
+        <Button
+            android:id="@+id/btnRota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/tombol_biru"
+            android:onClick="Rotation"
+            android:text="@string/type_rotation_vector"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnRela" />
+
+        <Button
+            android:id="@+id/btnTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/tombol_nila"
+            android:onClick="Temperature"
+            android:text="@string/type_temperature"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnRota" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

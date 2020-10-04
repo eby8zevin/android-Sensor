@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ahmadabuhasan.sensor">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.permission.sensor.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.light"
+        android:required="true" />
+    <uses-feature
+        android:name="android.permission.sensor.proximity"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LsensorActivity"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".TempActivity" />
+        <activity android:name=".RotationActivity" />
+        <activity android:name=".RelativeActivity" />
+        <activity android:name=".ProximityActivity" />
+        <activity android:name=".PressureActivity" />
+        <activity android:name=".OrientationActivity" />
+        <activity android:name=".MagneticActivity" />
+        <activity android:name=".LinearActivity" />
+        <activity android:name=".LightActivity" />
+        <activity android:name=".GyroscopeActivity" />
+        <activity android:name=".GravityActivity" />
+        <activity android:name=".TemperatureActivity" />
+        <activity android:name=".AccelerometerActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
