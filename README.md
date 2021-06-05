@@ -1,4 +1,4 @@
-# android-sensor
+# android-Sensor
 Sensor - Android Studio
 
 ## Type Sensors
